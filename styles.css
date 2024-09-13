@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8c291, #6a89cc);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  width: 95%;
+  height: 95vh;
+  background-color: #fdfbfb;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Event Creator (left) */
+.event-creator {
+  width: 30%;
+  padding: 20px 10px;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.event-creator h1 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+label {
+  font-size: 1.1em;
+  color: #f1f2f6;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  background: #ecf0f1;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(0, 148, 255, 0.5);
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.1em;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), -5px -5px 20px rgba(255, 255, 255, 0.7);
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #4834d4;
+}
+
+/* Event Lister (right) */
+.event-lister {
+  width: 75%;
+  padding: 40px;
+  background-color: #fdfbfb;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.event-lister h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2d3436;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #dfe6e9;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+li h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #2d3436;
+}
+
+li p {
+  margin: 5px 0;
+  color: #636e72;
+}
